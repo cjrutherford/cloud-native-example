@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: cloud-native-example-service
+  labels:
+    app: cloud-native-example
+spec:
+  type: ClusterIP
+  selector:
+    app: cloud-native-example
+  ports:
+    - protocol: TCP
+      port: 7880
+      targetPort: 7880
