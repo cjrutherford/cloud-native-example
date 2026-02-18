@@ -189,6 +189,7 @@ func startConsumer(ctx context.Context) {
 }
 
 func main() {
+	log.Print("Starting Cloud Native Example Application...")
 	ensureTopics()
 	kafkaWriter = &kafka.Writer{
 		Addr:     kafka.TCP(brokerAddress + ":" + strconv.Itoa(brokerPort)),

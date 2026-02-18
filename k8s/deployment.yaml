@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cloud-native-example
-          image: cloud-native-example:latest
+          image: docker.io/cjrutherford/cloud-native-example:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 7880
